@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/png-transparent-computer-icons-editing-text-editor-icon-design-forming-angle-mac-user-interface.png"/>
+    <title>Your Thoughts </title>
+    <link rel="stylesheet" href="css/base.css"/>
+     <link rel="stylesheet" href="css/layout.css"/>
+      <link rel="stylesheet" href="css/components.css"/>
+       <link rel="stylesheet" href="css/edit.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1 class="web-name">Your Thoughts</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Your words, perfectly crafted</h2>
+        <p>Fast. Minimal. Powerful editing</p>
+      </div>
+    </section>
+    <section class="intro">
+         <div class="intro-card">Edit smarter</div>
+      <div class="intro-card">More creativity</div>
+      <div class="intro-card">Write freely</div>
+    </section>
+    <section class="text">
+            <div class="controls">
+                <input
+                       id="search"
+                       placeholder="Search tasks ..."
+                     onkeyup="searchTexts(this.value)"
+                 />
+            </div>
+            <div class="text-container">
+                 <input id="heading" placeholder="Text heading..." />
+                 <textarea id="text" placeholder="wright something......"></textarea>
+                 <button onclick="handleAddText()">Add Text</button>
+            </div>
+            <div id="textlist" class="text-cards"></div>
+    </section>
+    <section id="edit" class="edit">
+        <div class="edit-container">
+                <h3>Edit Text</h3>
+              <input id="editHeading" placeholder="Edit heading..." />
+              <textarea id="editDescription" placeholder="wright something......."></textarea>
+              <button onclick="saveEdit()">Save</button>
+              <button class="cancel" onclick="closeEdit()">Cancel</button>
+        </div>
+           
+    </section>
+
+
+    <footer class="footer">@Copyright 2026 Your Thoughts</footer>
+<script src="js/storage.js"></script>
+<script src="js/data.js"></script>
+<script src="js/validators.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/edit.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

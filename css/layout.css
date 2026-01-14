@@ -1,0 +1,46 @@
+.header{
+    position: sticky;
+    top: 0;
+    background: var(--dark);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header nav a.active{
+    border-bottom: 2px solid var(--primary)
+}
+.header nav a:hover{
+    color: var(--primary);
+    font-weight: bold;
+}
+.hero{
+    height: 280px;
+    background: url('../assets/bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;            
+}
+
+.hero-content{
+    text-align: center;
+}
+.about{
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.footer{
+    background: #2a333f;;
+    color:white;
+    text-align: center;
+    padding:15px;
+}
