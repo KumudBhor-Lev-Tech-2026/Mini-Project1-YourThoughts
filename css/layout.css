@@ -1,7 +1,7 @@
 .header{
     position: sticky;
     top: 0;
-    background: var(--dark);
+    background: #1a2435;
     color: white;
     padding: 15px 30px;
     display: flex;
@@ -39,7 +39,7 @@
 }
 
 .footer{
-    background: #2a333f;;
+    background: #2a333f;
     color:white;
     text-align: center;
     padding:15px;
